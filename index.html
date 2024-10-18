@@ -21,68 +21,137 @@
 
         @font-face {
             font-family: header;
-            src: url("font/card-font.woff") format("woff");
+            src: url("/font/headerFont.woff") format("woff");
         }
 
         @font-face {
             font-family: card-font;
-            src: url("font/card-font.woff") format("woff");
+            src: url("/font/card-font.woff") format("woff");;
         }
     </style>
-  
+    <script>
+        tailwind.config = {
+            safelist: [
+                'w-full',
+                'min-h-screen',
+                'flex',
+                'flex-col',
+                'items-center',
+                'justify-start',
+                'gap-[55px]',
+                'pt-[40px]',
+                'pb-[20px]',
+                'bg-cover',
+                'bg-center',
+                'max-[480px]:p-[10px]',
+                'w-[88%]',
+                'max-[1024px]:w-full',
+                'items-start',
+                'max-[1024px]:items-center',
+                'max-[1024px]:justify-center',
+                'text-[100px]',
+                'tracking-[3.5px]',
+                'text-white',
+                'font-normal',
+                'max-[480px]:ml-[5px]',
+                'max-[480px]:tracking-[1px]',
+                'flex-wrap',
+                'gap-[40px]',
+                'mt-0',
+                'w-[20%]',
+                'max-[1024px]:w-[calc(33.333%-10px)]',
+                'max-[1024px]:m-[15px]',
+                'max-[768px]:w-[calc(50%-10px)]',
+                'max-[768px]:m-[15px]',
+                'h-[350px]',
+                'rounded-[5px]',
+                'relative',
+                'shadow-[0px_0px_25px_rgba(255,255,255,0.5)]',
+                'bg-white',
+                'lg:m-[15px]',
+                'max-[480px]:w-[calc(100%-10px)]',
+                'max-[480px]:m-0',
+                'max-[480px]:mt-[20px]',
+                'w-[100px]',
+                'h-[100px]',
+                'object-cover',
+                'rounded-full',
+                'absolute',
+                '-top-[50px]',
+                'left-1/2',
+                'transform',
+                '-translate-x-1/2',
+                'border-[5px]',
+                'border-[#2A1768]',
+                'justify-center',
+                'gap-[10px]',
+                'p-[20px]',
+                'font-bold',
+                'text-center',
+                'text-[25px]',
+                'font-semibold',
+                'gap-[5px]',
+                'font-medium',
+                'text-[42px]',
+                'text-[#2A1768]',
+                'tracking-[1.3px]',
+                'mt-[8px]',
+                'gap-[28px]'
+            ]
+        }
+    </script>
 </head>
 <body>
     <div id="assignment" class="w-full min-h-screen flex flex-col items-center justify-start gap-[55px] pt-[40px] pb-[20px] bg-[url('https://wallpaperaccess.com/full/2008050.jpg')] bg-cover bg-center max-[480px]:p-[10px]">
         <h1 class="main-header w-[88%] max-[1024px]:w-full flex items-start max-[1024px]:items-center max-[1024px]:justify-center text-[100px] tracking-[3.5px] text-white font-[header] font-normal max-[480px]:ml-[5px] max-[480px]:tracking-[1px]">Our Services</h1>
         <div class="card-wrapper w-full flex items-center justify-center flex-wrap gap-[40px] mt-0">    
             <div class="card w-[20%] max-[1024px]:w-[calc(33.333%-10px)] max-[1024px]:m-[15px] max-[768px]:w-[calc(50%-10px)] max-[768px]:m-[15px] h-[350px] font-[card-font] rounded-[5px] relative shadow-[0px_0px_25px_rgba(255,255,255,0.5)] bg-white lg:m-[15px] max-[480px]:w-[calc(100%-10px)] max-[480px]:m-0 max-[480px]:mt-[20px]">
-                <img src="images/firstcard-icon.png" class="card-img-top w-[100px] h-[100px] object-cover rounded-full absolute -top-[50px] left-1/2 transform -translate-x-1/2 border-[5px] border-[#2A1768]" alt="...">
+                <img src="/images/firstcard-icon.png" class="card-img-top w-[100px] h-[100px] object-cover rounded-full absolute -top-[50px] left-1/2 transform -translate-x-1/2 border-[5px] border-[#2A1768]" alt="...">
                 <div class="card-body h-full flex flex-col items-center justify-center gap-[10px] p-[20px]">
                     <h2 class="card-title font-bold text-center text-[25px]">Emergency Plumbing Services</h2>
                     <p class="card-text font-semibold text-center">Our Plumbers are ready to go 24/7 for emergencies - including nights, weekends, and holidays.</p>
                     <div class="card-btm-wrapper flex items-center justify-center gap-[5px]">
                         <h2 class="card-btm font-[header] font-medium text-[42px] text-[#2A1768] tracking-[1.3px]">Explore This Service</h2>
-                        <img src="images/right-arrow (1).png" class="mt-[8px]"/>
+                        <img src="/images/right-arrow (1).png" class="mt-[8px]"/>
                     </div>
                 </div>
             </div>
             <div class="card w-[20%] max-[1024px]:w-[calc(33.333%-10px)] max-[1024px]:m-[15px] max-[768px]:w-[calc(50%-10px)] max-[768px]:m-[15px] h-[350px] font-[card-font] rounded-[5px] relative shadow-[0px_0px_25px_rgba(255,255,255,0.5)] bg-white max-[480px]:w-[calc(100%-10px)] max-[480px]:m-0 max-[480px]:mt-[20px]">
-                <img src="images/secondcard-icon.png" class="card-img-top w-[100px] h-[100px] object-cover rounded-full absolute -top-[50px] left-1/2 transform -translate-x-1/2 border-[5px] border-[#2A1768]" alt="...">
+                <img src="/images/secondcard-icon.png" class="card-img-top w-[100px] h-[100px] object-cover rounded-full absolute -top-[50px] left-1/2 transform -translate-x-1/2 border-[5px] border-[#2A1768]" alt="...">
                 <div class="card-body h-full flex flex-col items-center justify-center gap-[28px] p-[20px]">
                     <h2 class="card-title font-bold text-center text-[25px]">Plumbing and Drains</h2>
                     <p class="card-text font-semibold text-center">As the largest Plumbing and drain service company, we make thousands of repairs every day.</p>
                     <div class="card-btm-wrapper flex items-center justify-center gap-[5px]">
                         <h2 class="card-btm font-[header] font-medium text-[42px] text-[#2A1768] tracking-[1.3px]">Explore This Service</h2>
-                        <img src="images/right-arrow (1).png" class="mt-[8px]"/>
+                        <img src="/images/right-arrow (1).png" class="mt-[8px]"/>
                     </div>
                 </div>
             </div>
             <div class="card w-[20%] max-[1024px]:w-[calc(33.333%-10px)] max-[1024px]:m-[15px] max-[768px]:w-[calc(50%-10px)] max-[768px]:m-[15px] h-[350px] font-[card-font] rounded-[5px] relative shadow-[0px_0px_25px_rgba(255,255,255,0.5)] bg-white max-[480px]:w-[calc(100%-10px)] max-[480px]:m-0 max-[480px]:mt-[20px]">
-                <img src="images/thirdcard-icon.png" class="card-img-top w-[100px] h-[100px] object-cover rounded-full absolute -top-[50px] left-1/2 transform -translate-x-1/2 border-[5px] border-[#2A1768]" alt="...">
+                <img src="/images/thirdcard-icon.png" class="card-img-top w-[100px] h-[100px] object-cover rounded-full absolute -top-[50px] left-1/2 transform -translate-x-1/2 border-[5px] border-[#2A1768]" alt="...">
                 <div class="card-body h-full flex flex-col items-center justify-center gap-[28px] p-[20px]">
                     <h2 class="card-title font-bold text-center text-[25px]">Water Damage</h2>
                     <p class="card-text font-semibold text-center">Our teams are equipped with state-of-the-art water extraction and cleanup equipment.</p>
                     <div class="card-btm-wrapper flex items-center justify-center gap-[5px]">
                         <h2 class="card-btm font-[header] font-medium text-[42px] text-[#2A1768] tracking-[1.3px]">Explore This Service</h2>
-                        <img src="images/right-arrow (1).png" class="mt-[8px]"/>
+                        <img src="/images/right-arrow (1).png" class="mt-[8px]"/>
                     </div>
                 </div>
             </div>
             <div class="card w-[20%] max-[1024px]:w-[calc(33.333%-10px)] max-[1024px]:m-[15px] max-[768px]:w-[calc(50%-10px)] max-[768px]:m-[15px] h-[350px] font-[card-font] rounded-[5px] relative shadow-[0px_0px_25px_rgba(255,255,255,0.5)] bg-white max-[480px]:w-[calc(100%-10px)] max-[480px]:m-0 max-[480px]:mt-[20px]">
-                <img src="images/fourthcard.png" class="card-img-top w-[100px] h-[100px] object-cover rounded-full absolute -top-[50px] left-1/2 transform -translate-x-1/2 border-[5px] border-[#2A1768]" alt="...">
+                <img src="/images/fourthcard.png" class="card-img-top w-[100px] h-[100px] object-cover rounded-full absolute -top-[50px] left-1/2 transform -translate-x-1/2 border-[5px] border-[#2A1768]" alt="...">
                 <div class="card-body h-full flex flex-col items-center justify-center gap-[28px] p-[20px]">
                     <h2 class="card-title font-bold text-center text-[25px]">Water Heaters</h2>
                     <p class="card-text font-semibold text-center">Trust Roto-Rooter for Repair and replacement of gas,electric and tankless water heaters.</p>
                     <div class="card-btm-wrapper flex items-center justify-center gap-[5px]">
                         <h2 class="card-btm font-[header] font-medium text-[42px] text-[#2A1768] tracking-[1.3px]">Explore This Service</h2>
-                        <img src="images/right-arrow (1).png" class="mt-[8px]"/>
+                        <img src="/images/right-arrow (1).png" class="mt-[8px]"/>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="tailwind.config.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script> 
-    <script src="script.js"></script> 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
